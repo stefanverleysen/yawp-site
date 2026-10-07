@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — Yawp</title>
+<meta name="description" content="Pairing, overnight tracking, sleep stages and what to do when the strap won't connect.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;900&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,300;8..60,400&display=swap">
+<style>
+  :root {
+    --ink:#0B0C0E; --ink-2:#131519; --rule:#23262C;
+    --text:#E8E9EA; --text-2:#9BA1AA; --text-3:#6E747E;
+    --accent:#E03A46; --mint:#2FD6AE; --selection:#3A1116;
+  }
+  @media (prefers-color-scheme: light) {
+    :root:not([data-theme="dark"]) {
+      --ink:#EDEDEB; --ink-2:#E4E4E1; --rule:#CFCFCB;
+      --text:#14161A; --text-2:#3B4149; --text-3:#6A707A;
+      --accent:#C42734; --mint:#0B7A61; --selection:#F6D6D9;
+    }
+  }
+  :root[data-theme="light"] {
+    --ink:#EDEDEB; --ink-2:#E4E4E1; --rule:#CFCFCB;
+    --text:#14161A; --text-2:#3B4149; --text-3:#6A707A;
+    --accent:#C42734; --mint:#0B7A61; --selection:#F6D6D9;
+  }
+
+  * { box-sizing:border-box; }
+  body {
+    margin:0; background:var(--ink); color:var(--text);
+    font-family:"Source Serif 4", Georgia, serif;
+    font-size:17.5px; line-height:1.6; -webkit-font-smoothing:antialiased;
+  }
+  ::selection { background:var(--selection); }
+  .wrap { max-width:1080px; margin:0 auto; padding:0 56px; }
+  @media (max-width:900px) { .wrap { padding:0 32px; } }
+  @media (max-width:640px) { .wrap { padding:0 24px; } }
+  .measure { max-width:64ch; }
+
+  .logo { display:flex; align-items:center; gap:14px; text-decoration:none; }
+  .logo svg { display:block; overflow:visible; }
+  .logo .spike { stroke:var(--accent); stroke-width:2.4; fill:none;
+                 stroke-linecap:square; stroke-linejoin:miter; }
+  .logo .word {
+    font-family:"Archivo",system-ui,sans-serif; font-weight:900;
+    font-size:17px; letter-spacing:.38em; color:var(--text);
+    padding-left:2px;
+  }
+
+  header.page { padding:44px 0 0; }
+  h1 {
+    font-family:"Archivo",system-ui,sans-serif; font-weight:900;
+    font-size:clamp(34px,6vw,54px); line-height:1.04; letter-spacing:-.02em;
+    margin:40px 0 10px;
+  }
+  .standfirst { color:var(--text-2); font-size:19px; margin:0 0 44px; max-width:56ch; }
+
+  h2 {
+    font-family:"Archivo",system-ui,sans-serif; font-weight:700;
+    font-size:23px; letter-spacing:-.01em; margin:52px 0 18px;
+    padding-top:22px; border-top:1px solid var(--rule);
+  }
+  p { margin:0 0 15px; }
+  ul, ol { margin:0 0 15px; padding-left:20px; }
+  li { margin-bottom:9px; }
+  strong { font-weight:600; color:var(--text); }
+  a { color:var(--accent); text-decoration-thickness:1px; text-underline-offset:2px; }
+  code {
+    font-family:"IBM Plex Mono",ui-monospace,monospace; font-size:.88em;
+    background:var(--ink-2); padding:1px 5px; border-radius:3px; color:var(--text-2);
+  }
+
+  /* Question-and-answer, where the question has to be scannable and the answer
+     has to be readable. A details element would hide the very thing someone
+     scrolled here to find. */
+  .qa { margin:0 0 30px; }
+  .qa > h3 {
+    font-family:"Archivo",system-ui,sans-serif; font-weight:700;
+    font-size:16.5px; margin:0 0 8px; color:var(--text);
+  }
+  .qa > p:last-child { margin-bottom:0; }
+
+  .contact {
+    border:1px solid var(--rule); border-left:3px solid var(--mint);
+    background:var(--ink-2); padding:24px 26px; margin:16px 0 0;
+  }
+  .contact p:last-child { margin-bottom:0; }
+
+  footer { padding:72px 0 96px; margin-top:64px; border-top:1px solid var(--rule);
+           color:var(--text-3); font-size:13.5px; }
+  footer p { margin-bottom:11px; max-width:62ch; }
+  footer .logo { margin-bottom:26px; opacity:.65; }
+  footer a { color:var(--text-2); }
+</style>
+
+<header class="page">
+  <div class="wrap">
+    <a class="logo" href="/">
+      <svg width="46" height="26" viewBox="0 0 46 26" role="img" aria-label="Yawp">
+        <path class="spike"
+              d="M0 16 L7 16 L9.5 12 L12 16 L17 16 L20.5 3 L24 24 L27 16 L33 16 L35 13.5 L37 16 L46 16"/>
+      </svg>
+      <span class="word">YAWP</span>
+    </a>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="measure">
+  <h1>Support</h1>
+  <p class="standfirst">How it works, what to do when it doesn&rsquo;t, and how
+    to reach a human.</p>
+
+  <div class="contact">
+    <p><strong>Email <a href="mailto:support@yawp.rest">support@yawp.rest</a></strong>
+      and you will get a reply from the person who wrote the app.</p>
+    <p>It helps to say which strap you use, your iPhone model and iOS version,
+      and what you saw instead of what you expected.</p>
+  </div>
+
+  <h2>Getting started</h2>
+
+  <ol>
+    <li><strong>Wet the strap&rsquo;s contacts</strong> and put it on. A dry
+      strap reads nothing, and this is the cause of most &ldquo;it won&rsquo;t
+      connect&rdquo; reports.</li>
+    <li><strong>Open Yawp and allow Bluetooth.</strong> It scans straight away.</li>
+    <li><strong>Pick your strap</strong> from the list. Yawp remembers it and
+      reconnects on its own from then on.</li>
+    <li><strong>Wear it for a few days.</strong> Readiness and the trends are
+      measured against your own baseline, and a baseline needs a week or so of
+      nights before it means anything.</li>
+  </ol>
+
+  <h2>Questions</h2>
+
+  <div class="qa">
+    <h3>Which straps work?</h3>
+    <p>Any strap that speaks the standard Bluetooth Heart Rate Service
+      (<code>0x180D</code>) — including WHOOP 4.0, Polar H10, Garmin HRM and
+      most chest straps of the last decade. For HRV you also need a strap that
+      reports beat-to-beat (RR) intervals; nearly all chest straps do.</p>
+  </div>
+
+  <div class="qa">
+    <h3>Does it track my sleep overnight?</h3>
+    <p>Yes. Leave Yawp running in the background — swiping it closed from the
+      app switcher stops it reconnecting. It holds the Bluetooth link through
+      the night and reconstructs the night in the morning.</p>
+  </div>
+
+  <div class="qa">
+    <h3>How accurate are the sleep stages?</h3>
+    <p><strong>They are estimates.</strong> REM, light and deep are inferred
+      from your heart rate and heart-rate variability, which is what a strap can
+      actually see — only a sleep lab measures stages directly. The app labels
+      them &ldquo;estimated&rdquo; wherever they appear. Treat the shape and the
+      trend as useful and the exact minutes as approximate.</p>
+  </div>
+
+  <div class="qa">
+    <h3>My strap connects, then the readings stop.</h3>
+    <p>Usually the strap: contacts dried out, it slipped, or the battery is low.
+      Re-wet the contacts and check the battery figure on the Today screen. If
+      it keeps happening on a strap you know is good, email us — include roughly
+      when it stopped and we can tell you what the app saw.</p>
+  </div>
+
+  <div class="qa">
+    <h3>Nothing shows up at all.</h3>
+    <p>Check Settings ▸ Yawp ▸ Bluetooth is on. Check the strap isn&rsquo;t
+      already connected to its manufacturer&rsquo;s own app — most straps accept
+      only one connection at a time, so quit the other app first. Then force-quit
+      Yawp and reopen it.</p>
+  </div>
+
+  <div class="qa">
+    <h3>Where is my data, and can I get it out?</h3>
+    <p>On your phone, in the app&rsquo;s own storage, and nowhere else unless you
+      switch on iCloud backup. To take a copy out, tap
+      <strong>&bull;&bull;&bull;</strong> at the top right and choose
+      <em>Export a copy to Files</em> &mdash; you get the whole database, every
+      reading, in a format anything can open. See the
+      <a href="/privacy">privacy page</a> for exactly what is stored.</p>
+  </div>
+
+  <div class="qa">
+    <h3>I paid, and a new phone wants me to pay again.</h3>
+    <p>Open the purchase screen and tap <em>Restore purchase</em>. It is one
+      purchase, tied to your Apple Account, and it is not a subscription —
+      there is nothing to renew or cancel.</p>
+  </div>
+
+  <div class="qa">
+    <h3>Does it need an internet connection?</h3>
+    <p>No. Everything is computed on the phone. With iCloud backup switched off,
+      the app makes no network connections at all.</p>
+  </div>
+
+  <div class="qa">
+    <h3>Can I use it with Apple Health?</h3>
+    <p>Yes, in both directions, and both are optional. Yawp writes heart rate,
+      resting heart rate, HRV and sleep to Health, and reads your step count if
+      you allow it. Nothing else is ever read.</p>
+  </div>
+
+  <h2>Reporting something broken</h2>
+
+  <p>Yawp has no crash reporting and no analytics, which is a deliberate
+    privacy choice and does mean we only learn about a bug if you tell us. A
+    short email with what you did and what happened is genuinely useful.</p>
+
+  <div class="contact">
+    <p><a href="mailto:support@yawp.rest">support@yawp.rest</a></p>
+  </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap measure">
+    <div class="logo">
+      <svg width="46" height="26" viewBox="0 0 46 26" role="img" aria-label="Yawp">
+        <path class="spike"
+              d="M0 16 L7 16 L9.5 12 L12 16 L17 16 L20.5 3 L24 24 L27 16 L33 16 L35 13.5 L37 16 L46 16"/>
+      </svg>
+      <span class="word">YAWP</span>
+    </div>
+    <p>Yawp is independent software that works with hardware you already own.</p>
+    <p><strong>Not affiliated with, endorsed by, or connected to</strong> WHOOP
+      Inc., Polar, Garmin, Wahoo or any other manufacturer. Names are used only
+      to say what it&rsquo;s compatible with.</p>
+    <p>Not a medical device. For fitness and wellness only; not for diagnosis
+      or treatment.</p>
+  </div>
+</footer>
+</html>
